@@ -184,6 +184,14 @@ button {
 .next {
     right:-5px;
 }
+@media screen and (max-width: 768){
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navbtn{
+        display:none;
+    }
+}
  .gallery { 
     display: flex;
     flex-wrap: wrap;
@@ -216,6 +224,17 @@ button {
 .box img{
     width: 100px;
 
+}
+@media screen and (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
