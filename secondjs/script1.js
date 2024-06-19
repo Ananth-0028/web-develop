@@ -1,6 +1,6 @@
 var swiper = new Swiper(".slide-content", {
-    slidesPerView: 1,
-    spaceBetween: 25,
+    slidesPerView: 3,
+    spaceBetween: 20,
     loop: true,
     centerslide: 'true',
     fade:'true',
@@ -14,15 +14,9 @@ var swiper = new Swiper(".slide-content", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-   breakpoint:{
-        0:{
-            slidesPerView:1,
-        },
-        520:{
-            slidesPerView:2,
-        },
-        950:{
-            slidesPerView:3,
-        },
-    },
+
   });
+
+
+
+  

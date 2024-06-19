@@ -1,6 +1,6 @@
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
-    spaceBetween: 25,
+    spaceBetween: 20,
     loop: true,
     centerslide: 'true',
     fade:'true',
