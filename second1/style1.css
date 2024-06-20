@@ -51,7 +51,6 @@
 .bannertext h1 {
     font-size: 50px;
     font-family: "Oswald", sans-serif;
-
     font-weight: bolder;
     font-style: normal;
 }
@@ -95,7 +94,6 @@
 .slide-container {
     max-width: 1500px;
     width: 100%;
-
     padding: 40px 0px;
 }
 
@@ -129,7 +127,7 @@
 
 .name {
 
-    left: 900px;
+    left: 690px;
     position: absolute;
     top: -130px;
     font-size: 18px;
@@ -212,6 +210,27 @@ button {
 .next {
     right: -5px;
 }
+@media (max-width: 480px) {
+    .slide-content {
+        width: 90%;
+    }
+
+    .image-content {
+        height: 100%;
+    }
+
+    .name {
+        font-size: 10px;
+    }
+
+    .description {
+        font-size: px;
+    }
+
+    .button {
+        padding: 6px 12px;
+    }
+}
 
 .gallery {
     display: flex;
@@ -288,7 +307,7 @@ button {
     .button1,
     .button2,
     .button {
-        padding: 8px 16px;
+        padding: 16px 16px;
     }
 
     .card {
@@ -300,6 +319,20 @@ button {
     }
 
     .gallery img {
+        
         width: 100%;
     }
 }
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    button.prev, button.next {
+        font-size: 11px;
+    }
+}
+
