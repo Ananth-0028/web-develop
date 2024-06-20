@@ -1,0 +1,133 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .bannertext h1 {
+            font-size: 2em;
+        }
+
+        .bannertext span {
+            color: #f00;
+        }
+
+        .button1, .button2, .button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button1:hover, .button2:hover, .button:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .para {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .slide-container {
+            width: 100%;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .slide-content {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .card {
+            flex: 0 0 100%;
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            background: #f4f4f4;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container3 {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .bannertext h1 {
+                font-size: 1.5em;
+            }
+
+            .card {
+                max-width: 80%;
+            }
+
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .gallery a {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .gallery img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bannertext h1 {
+                font-size: 1.2em;
+            }
+
+            .button1, .button2, .button {
+                padding: 8px 16px;
+            }
+
+            .card {
+                max-width: 100%;
+            }
+
+            .gallery a {
+                width: 100%;
+            }
+
+            .gallery img {
+                width: 100%;
+            }
+        }
+
