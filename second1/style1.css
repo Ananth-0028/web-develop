@@ -6,8 +6,13 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(233,171,148,0.9808298319327731) 100%);
+}
 
 .container img {
+    
     width: 100%;
     height: auto;
     display: flex;
@@ -17,9 +22,18 @@
 }
 
 .container {
+    display: none;
     width: 100%;
     position: relative;
 
+}
+@media (max-width:768px) {
+    .container5{
+        display: none;
+    }
+    .container{
+        display: block;
+    }
 }
 
 
@@ -49,6 +63,44 @@
 }
 
 .bannertext h1 {
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+.container5 {
+    width: 100%;
+    position: relative;
+
+}
+
+
+
+.button4 {
+    position: relative;
+    top: -150px;
+    left: 100px;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.button3 {
+    position: relative;
+    top: -150px;
+    left: 100px;
+    background-color: red;
+    border: 2px solid white;
+}
+
+
+.bannertext5 {
+    position: absolute;
+    top: 10px;
+    color: white;
+    padding: 50px;
+}
+
+.bannertext5 h3 {
     font-size: 50px;
     font-family: "Oswald", sans-serif;
     font-weight: bolder;
@@ -154,9 +206,7 @@
 
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
+
 
 .slider-container {
     width: 60%;
@@ -323,9 +373,7 @@ button {
         width: 100%;
     }
 }
-* {
-    box-sizing: border-box;
-}
+
 
 
 
@@ -335,4 +383,58 @@ button {
         font-size: 11px;
     }
 }
+
+
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+
+.prev1, .next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev1:hover, .next1:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 
